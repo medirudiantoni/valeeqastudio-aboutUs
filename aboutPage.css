@@ -1,0 +1,72 @@
+.home-about {
+    height: 850px;
+    margin-bottom: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('assets/logo/LOGO\ VALEEQA_1.png');
+    background-size: 60%;
+    background-attachment: fixed;
+    background-position: right top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.home-about .text-contents {
+    position: relative;
+    z-index: 2;
+}
+
+.home-about-overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,.75), rgba(0,0,0,.85));
+}
+
+.who-we-are .text-contents {
+    width: 80%;
+    padding: 0 100px;
+}
+
+.contact, footer {
+    background-color: #000;
+}
+
+.parallax-img-wrapper {
+    padding: 0;
+}
+.parallax {
+    min-height: 600px;
+    background: transparent;
+}
+
+
+@media screen and (max-width: 991px) {
+    .home-about {
+        background-size: 400%;
+        background-position: center top;
+    }
+    .who-we-are .text-contents {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .meet-me .row:first-child img {
+        width: 60%;
+    }
+    .fs90 {
+        font-size: 60px;
+    }
+    .parallax-img-wrapper {
+        padding: 100px 0;
+    }
+    .parallax {
+        height: 200px;
+        background: transparent;
+    }
+}
+@media screen and (max-width: 767px) {
+    .who-we-are .bg-img {
+        height: 300px;
+    }
+}
